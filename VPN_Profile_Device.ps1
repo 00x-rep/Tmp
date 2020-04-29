@@ -158,8 +158,8 @@ Start-Sleep -s 2
 
 $RasphonePath = "$env:ProgramData\Microsoft\Network\Connections\Pbk\rasphone.pbk"
 $Settings = @{ }
-$Settings.Add('IpInterfaceMetric', 3)
-$Settings.Add('Ipv6InterfaceMetric', 3)
+$Settings.Add('IpInterfaceMetric', 2)
+$Settings.Add('Ipv6InterfaceMetric', 2)
 
 Update-Rasphone -Path $RasphonePath -ProfileName $ProfileName -Settings $Settings
 
